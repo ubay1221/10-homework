@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ notes.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <button class="update-btn"><a href="{{ notes.get_update_url }}">Update</a></button>
+    <h1>Note Detail</h1>
+    <div class="note-detail">
+        <h2>Note: {{ notes.title }}</h2>
+        <h3>Content: {{ notes.content }}</h3>
+    </div>
+    <a href="{% url 'notes:list' %}" class="back-btn">Back to Note List</a>
+    <button class="delete-btn"><a href="{{ notes.get_delete_url }}">Delete</a></button>
+</body>
+</html>

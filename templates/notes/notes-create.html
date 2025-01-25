@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% if notes %}Update Note {% else %}Create Note{% endif %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>{% if notes %}Update Note {% else %}Create Note{% endif %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="note-form">
+            <label for="title">Note Title:</label><br>
+            <input id="title" type="text" name="title" value="{{ notes.title }}"><br><br>
+            <label for="content">Note Content:</label><br>
+            <textarea id="content" name="content" value="{{ notes.content }}"></textarea><br><br>
+        </div>
+        <button type="submit" class="update-btn">{% if notes %}Update{% else %}Create{% endif %}</button>
+    </form>
+    <br>
+    {% if notes %}
+        <a href="{{ notes.get_detail_url }}" class="back-btn">Back to Detail</a>
+    {% else %}
+        <a href="{% url 'notes:list' %}" class="back-btn">Back to List</a>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    background-color: #e0f7fa;
+}
+
+h1 {
+    color: #209696;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.list-btn {
+    text-decoration: none;
+    background-color: #318fa8;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.create-btn {
+    text-decoration: none;
+    background-color: #257d6d;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.note-link {
+    display: block;
+    width: fit-content;
+    background-color: #257d6d;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Arial';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-btn {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.delete-btn  {
+    background-color: red;
+    border-radius: 5px;
+}
+
+.delete-btn a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.update-btn {
+    background-color: #257d6d;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.update-btn a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.note-detail {
+    color: #257d6d;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+label {
+    color: #333;
+    font-family: 'Arial';
+}
+
+.note-form input {
+    border: 1px solid #b3e5e5;
+    border-radius: 5px;
+}
+
+.note-form textarea {
+    border: 1px solid #b3e5e5;
+    border-radius: 5px;
+}
+
+.task-h1 {
+    color: #344d91;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.create-task {
+    background-color: #28c730;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.update-task {
+    background-color: #28c730;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.update-task a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.task-detail {
+    color: #318fa8;
+    font-family: 'Arial';
+    font-weight: bold;
+}
